@@ -1,0 +1,11 @@
+{
+  "app": {
+    "[project]/src/app/_not-found/page": [],
+    "[project]/src/app/filing/page": [],
+    "[project]/src/app/login/page": [],
+    "[project]/src/app/page": []
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
