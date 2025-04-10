@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 interface Option {
     id:number;
     name:string;
    }
    
-const Relation = () => {
+const useRelation = () => {
        const[relationOptions,setRelationOptions]=useState<Option[]>([]);
        const [relationValue,setRelationValue]=useState('');
        // const[casetype,setCasetype]=useState('');
@@ -37,4 +37,4 @@ const Relation = () => {
    }
 }
 
-export default Relation
+export default useRelation

@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 interface Option {
     id:number;
     name:string;
    }
 
-const DistrictStateId = (stateValue:number) => {
+const useDistrictStateId = (stateValue:number) => {
  const[districtOptions,setDistrictOptions]=useState<Option[]>([]);
  const [districtValue,setDistrictValue]=useState('');
  const isFirstRender=useRef(true);
@@ -44,4 +44,4 @@ const DistrictStateId = (stateValue:number) => {
 
 }
 
-export default DistrictStateId
+export default useDistrictStateId

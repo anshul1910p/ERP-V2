@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 interface Option {
     id:number;
     name:string;
    }
 
-const SubdistrictDistrictId = (districtValue:number) => {
+const useSubdistrictDistrictId = (districtValue:number) => {
  const[subdistrictOptions,setSubDistrictOptions]=useState<Option[]>([]);
   const [subdistrictValue,setSubDistrictValue]=useState('');
   const isFirstRender=useRef(true);
@@ -43,4 +43,4 @@ const SubdistrictDistrictId = (districtValue:number) => {
      }
 }
 
-export default SubdistrictDistrictId
+export default useSubdistrictDistrictId

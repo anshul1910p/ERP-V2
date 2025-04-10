@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 interface Option {
     id:number;
     name:string;
    }
 
-const Country = () => {
+const useCountry = () => {
   const[countryOptions,setCountryOptions]=useState<Option[]>([]);
   const [countryValue,setCountryValue]=useState('');
      
@@ -37,4 +37,4 @@ const Country = () => {
    }
 }
 
-export default Country
+export default useCountry

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 interface Option {
     id:number;
     name:string;
    }
    
-const Establishment = () => {
+const useEstablishment = () => {
       const[estbOptions,setEstbOptions]=useState<Option[]>([]);
       const [estbValue,setEstbValue]=useState('');
       // const[casetype,setCasetype]=useState('');
@@ -37,4 +37,4 @@ const Establishment = () => {
   }
 }
 
-export default Establishment
+export default useEstablishment

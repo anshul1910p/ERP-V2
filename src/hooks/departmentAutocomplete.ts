@@ -3,7 +3,7 @@ interface Option {
     id:number;
     name:string;
 }
-const departmentAutocomplete = () => {
+const useDepartmentAutocomplete = () => {
     const [query,setQuery]=useState('');
     const [searchQuery, setSearchQuery] = useState('');
     const [suggestions,setSuggestions]=useState<Option[]>([]);
@@ -78,4 +78,4 @@ const departmentAutocomplete = () => {
   }
 }
 
-export default departmentAutocomplete
+export default useDepartmentAutocomplete

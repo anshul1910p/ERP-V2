@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 interface Option {
     id:number;
     name:string;
    }
    
 
-const Specialtype = () => {
+const useSpecialtype = () => {
  const[specialtypeOptions,setSpecialtypeOptions]=useState<Option[]>([]);
  const [specialtypeValue,setSpecialtypeValue]=useState('');
       // const[casetype,setCasetype]=useState('');
@@ -38,4 +38,4 @@ const Specialtype = () => {
   }
 }
 
-export default Specialtype
+export default useSpecialtype

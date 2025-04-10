@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 interface Option {
     id:number;
     name:string;
    }
 
-const VillageSubdistrictId = (subdistrictValue:number) => {
+const useVillageSubdistrictId = (subdistrictValue:number) => {
  const[villageOptions,setVillageOptions]=useState<Option[]>([]);
    const [villageValue,setVillageValue]=useState('');
    const isFirstRender=useRef(true);
@@ -43,4 +43,4 @@ const VillageSubdistrictId = (subdistrictValue:number) => {
       }
 }
 
-export default VillageSubdistrictId
+export default useVillageSubdistrictId
